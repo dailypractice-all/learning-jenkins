@@ -1,35 +1,52 @@
+// pipeline {
+//   agent any
+//
+//   stages {
+//
+//     stage('TEST1') {
+//       steps {
+//         echo 'Test1'
+//       }
+//     }
+//
+//     stage('TEST2') {
+//       steps {
+//         echo 'Test2'
+//         mail bcc: '', body: 'test', cc: '', from: '', replyTo: '', subject: 'test', to: '1996gauravb@gmail.com'
+//         build 'sample'
+//       }
+//     }
+//   }
+//
+//
+//    post {
+//       fixed{
+//         echo "Hello"
+//     }
+//     failure {
+//       echo "failure state"
+//       mail bcc: '', body: 'test', cc: '', from: '', replyTo: '', subject: 'test', to: '1996gauravb@gmail.com'
+//       build 'sample'
+//     }
+//     cleanup {
+//       echo "common setps"
+//     }
+//    }
+// }
+
 pipeline {
   agent any
 
+  environment {
+    SAMPLE_URL="goole.com"
+    }
+
   stages {
 
-    stage('TEST1') {
+    stage('One') {
       steps {
-        echo 'Test1'
+        sh 'echo URL = ${SAMPLE_URL}'
+        echo SAMPLE_URL
       }
     }
-
-    stage('TEST2') {
-      steps {
-        echo 'Test2'
-        mail bcc: '', body: 'test', cc: '', from: '', replyTo: '', subject: 'test', to: '1996gauravb@gmail.com'
-        build 'sample'
-      }
-    }
-  }
-
-
-   post {
-      fixed{
-        echo "Hello"
-    }
-    failure {
-      echo "failure state"
-      mail bcc: '', body: 'test', cc: '', from: '', replyTo: '', subject: 'test', to: '1996gauravb@gmail.com'
-      build 'sample'
-    }
-    cleanup {
-      echo "common setps"
-    }
-   }
 }
