@@ -9,11 +9,10 @@ pipeline {
       }
     }
 
-  stage('TEST2') {
-    steps {
-       echo 'Test2'
-       emailext body: 'TEST', subject: 'TEST', to: 'raghu@local.com'
-       build job: 'roboshop-ansible', parameters: [string(name: 'COMPONENT', value: 'frontend')]
+    stage('TEST2') {
+      steps {
+        echo 'Test2'
       }
     }
   }
+}
