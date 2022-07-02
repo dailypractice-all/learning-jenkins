@@ -12,6 +12,8 @@ pipeline {
     stage('TEST2') {
       steps {
         echo 'Test2'
+        mail bcc: '', body: 'test', cc: '', from: '', replyTo: '', subject: 'test', to: '1996gauravb@gmail.com'
+        build 'sample'
       }
     }
   }
@@ -23,6 +25,8 @@ pipeline {
     }
     failure {
       echo "failure state"
+      mail bcc: '', body: 'test', cc: '', from: '', replyTo: '', subject: 'test', to: '1996gauravb@gmail.com'
+      build 'sample'
     }
     cleanup {
       echo "common setps"
