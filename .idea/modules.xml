@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../learning-ansible/learning-ansible.iml" filepath="$PROJECT_DIR$/../learning-ansible/learning-ansible.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/learning-jenkins.iml" filepath="$PROJECT_DIR$/.idea/learning-jenkins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learning-jenkins.iml" filepath="$PROJECT_DIR$/learning-jenkins.iml" />
       <module fileurl="file://$PROJECT_DIR$/../roboshop/roboshop.iml" filepath="$PROJECT_DIR$/../roboshop/roboshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../roboshop-ansible/roboshop-ansible.iml" filepath="$PROJECT_DIR$/../roboshop-ansible/roboshop-ansible.iml" />
+      <module fileurl="file://$USER_HOME$/roboshop-jenkins/roboshop-jenkins.iml" filepath="$USER_HOME$/roboshop-jenkins/roboshop-jenkins.iml" />
       <module fileurl="file://$PROJECT_DIR$/../roboshop-shell-script/roboshop-shell-script.iml" filepath="$PROJECT_DIR$/../roboshop-shell-script/roboshop-shell-script.iml" />
     </modules>
   </component>
