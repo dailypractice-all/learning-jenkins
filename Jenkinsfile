@@ -170,4 +170,5 @@
 
 @Library('roboshop-jenkins-shared-library@main') _
 
+env.COMPONENT = 'cart'
 log()
